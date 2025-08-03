@@ -292,8 +292,23 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .logo h1 {
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+    
     .nav-menu {
         gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 140px 0 80px;
     }
     
     .hero h1 {
@@ -324,8 +339,21 @@ body {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .nav-menu {
+        gap: 0.8rem;
+        font-size: 0.85rem;
+    }
+    
     .hero {
-        padding: 100px 0 60px;
+        padding: 120px 0 60px;
     }
     
     .hero h1 {
@@ -338,5 +366,20 @@ body {
     
     .stats {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
+    
+    .nav-menu {
+        gap: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .nav-menu a {
+        padding: 0.5rem 0;
     }
 }
